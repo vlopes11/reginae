@@ -1,0 +1,13 @@
+[package]
+name = "reginae-solver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+#radix_trie = "0.2"
+radix_trie = { git = "https://github.com/vlopes11/rust_radix_trie", branch = "vlopes11-key-slice" }
+reginae-core = { path = "../core" }
+tracing = { version = "0.1", optional = true }
+
+[features]
+default = ["tracing"]

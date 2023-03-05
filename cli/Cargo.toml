@@ -1,0 +1,9 @@
+[package]
+name = "reginae-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libloading = "0.7"
+reginae-solver = { path = "../solver", features = ["tracing"] }
+tracing-subscriber = { version = "0.3", features = ["ansi", "env-filter"] }
